@@ -1,19 +1,4 @@
---[[
- /$$$$$$$                      /$$                 /$$$$$$$$                               
-| $$__  $$                    |__/                |__  $$__/                               
-| $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$          | $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$ 
-| $$$$$$$/ /$$__  $$ /$$_____/| $$ /$$__  $$         | $$ /$$__  $$ |____  $$| $$_  $$_  $$
-| $$__  $$| $$  \ $$|  $$$$$$ | $$| $$$$$$$$         | $$| $$$$$$$$  /$$$$$$$| $$ \ $$ \ $$
-| $$  \ $$| $$  | $$ \____  $$| $$| $$_____/         | $$| $$_____/ /$$__  $$| $$ | $$ | $$
-| $$  | $$|  $$$$$$/ /$$$$$$$/| $$|  $$$$$$$         | $$|  $$$$$$$|  $$$$$$$| $$ | $$ | $$
-|__/  |__/ \______/ |_______/ |__/ \_______/         |__/ \_______/ \_______/|__/ |__/ |__/     
-
-[+] Rosie Team Cảm Ơn Bạn Đã Tin Tưởng Và Sử Dụng Dịch Vụ Của Chúng Tôi, Nếu Thấy Hữu Ít Hãy Chia Sẻ Cho Bạn Bè Của Bạn !!
-[+] Không Được Share Hay Crack Mã Nguồn Này Cho Ai! Nếu Không Bạn Sẽ Bị Ban IP Khỏi Website Vĩnh Viễn!
-[+] Chúng Tôi Không Nhận Hỗ Trợ Những Mã Nguồn Miễn Phí, Xin Đừng Bảo Vì Sao. Tạo Ticket Hỗ Trợ Của Website Tại: https://rosieteam.net/dash/ticket
-[+] Nếu Bạn Edit Source Và Up Web Share Nhớ Obfuscate Script. Nếu Bạn Có Tiền Thì Sử Dụng: Lura.Ph, Luarmor.Net | Nếu Bạn Không Có Tiền Thì Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
-]]
-  
+---code by khangCC
 
 
 local P = game:GetService("Players")
@@ -109,9 +94,9 @@ gg.__namecall = newcclosure(function(...)
  if tostring(args[2]) ~= "true" and tostring(args[2]) ~= "false" then
  if _G.UseSkill then
  if type(args[2]) == "vector" then
- args[2] = PositionSkillMasteryDevilFruit
+ args[2] = PositionSkillCaiCCyDevilFruit
  else
-   args[2] = CFrame.new(PositionSkillMasteryDevilFruit)
+   args[2] = CFrame.new(PositionSkillCaiCCyDevilFruit)
  end
  return old(unpack(args))
  end
@@ -2456,11 +2441,11 @@ function CheckQuest()
 			CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
 			CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353, -0.994874597, -8.61311236e-08, -0.101116329, -9.10836206e-08, 1, 4.43614923e-08, 0.101116329, 5.33441664e-08, -0.994874597)
 			SPAWNPOINT = "Sky"
-		elseif MyLevel == 175 or MyLevel <= 189 or _G.Select_Mob_Farm == "Dark Master" then -- Dark Master
-			Ms = "Dark Master"
+		elseif MyLevel == 175 or MyLevel <= 189 or _G.Select_Mob_Farm == "Dark CaiCC" then -- Dark CaiCC
+			Ms = "Dark CaiCC"
 			NameQuest = "SkyQuest"
 			LevelQuest = 2
-			NameMon = "Dark Master"
+			NameMon = "Dark CaiCC"
 			CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
 			CFrameMon = CFrame.new(-5220.58594, 430.693298, -2278.17456, -0.925375521, 1.12086873e-08, 0.379051805, -1.05115507e-08, 1, -5.52320891e-08, -0.379051805, -5.50948407e-08, -0.925375521)
 			SPAWNPOINT = "Sky"
@@ -3354,11 +3339,11 @@ function checkselect()
 			--CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
 			CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353, -0.994874597, -8.61311236e-08, -0.101116329, -9.10836206e-08, 1, 4.43614923e-08, 0.101116329, 5.33441664e-08, -0.994874597)
 			--Spawn = "Sky"
-		elseif MyLevel == 175 or MyLevel <= 189 or SelectMonster == "Dark Master" then -- Dark Master
-			Mon = "Dark Master"
+		elseif MyLevel == 175 or MyLevel <= 189 or SelectMonster == "Dark CaiCC" then -- Dark CaiCC
+			Mon = "Dark CaiCC"
 			--NameQuest = "SkyQuest"
 			LevelQuest = 2
-			NameMon = "Dark Master"
+			NameMon = "Dark CaiCC"
 			--CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
 			CFrameMon = CFrame.new(-5220.58594, 430.693298, -2278.17456, -0.925375521, 1.12086873e-08, 0.379051805, -1.05115507e-08, 1, -5.52320891e-08, -0.379051805, -5.50948407e-08, -0.925375521)
 			--Spawn = "Sky"
@@ -4224,8 +4209,8 @@ spawn(function()
 		if tostring(method) == "FireServer" then
 			if tostring(args[1]) == "RemoteEvent" then
 				if tostring(args[2]) ~= "true" and tostring(args[2]) ~= "false" then
-					if UseSkillMasteryDevilFruit then
-						args[2] = PositionSkillMasteryDevilFruit
+					if UseSkillCaiCCyDevilFruit then
+						args[2] = PositionSkillCaiCCyDevilFruit
 						return old(unpack(args))
 					elseif AimSkillNearest then
 						args[2] = AimBotSkillPosition
@@ -4286,7 +4271,7 @@ end)
 
  
 --------------------------------------------------------------------
-local Library = Update:Window("Master","")
+local Library = Update:Window("CaiCC","")
 ------------------------------------------
 
 spawn(function()
@@ -4455,8 +4440,8 @@ spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function() CheckQuest()
 		pcall(function()
 			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.Auto_Farm_Level and MasteryBFStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).magnitude <= 350 then
-					v.HumanoidRootPart.CFrame = PosMonMasteryFruit
+				if _G.Auto_Farm_Level and CaiCCyBFStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonCaiCCyFruit.Position).magnitude <= 350 then
+					v.HumanoidRootPart.CFrame = PosMonCaiCCyFruit
 					v.HumanoidRootPart.CanCollide = false
 					v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 					if v.Humanoid:FindFirstChild("Animator") then
@@ -4473,8 +4458,8 @@ spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function() CheckQuest()
 		pcall(function()
 			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.Auto_Farm_Level and MasteryGunStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).magnitude <= 350 then
-					v.HumanoidRootPart.CFrame = PosMonMasteryGun
+				if _G.Auto_Farm_Level and CaiCCyGunStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonCaiCCyGun.Position).magnitude <= 350 then
+					v.HumanoidRootPart.CFrame = PosMonCaiCCyGun
 					v.HumanoidRootPart.CanCollide = false
 					v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 					if v.Humanoid:FindFirstChild("Animator") then
@@ -6044,7 +6029,7 @@ end
 -- Farm_Monster
 if World1 then
 tableMon = {
- "Bandit","Monkey","Gorilla","Pirate","Brute","Desert Bandit","Desert Officer","Snow Bandit","Snowman","Chief Petty Officer","Sky Bandit","Dark Master","Prisoner", "Dangerous Prisoner","Toga Warrior","Gladiator","Military Soldier","Military Spy","Fishman Warrior","Fishman Commando","God's Guard","Shanda","Royal Squad","Royal Soldier","Galley Pirate","Galley Captain"
+ "Bandit","Monkey","Gorilla","Pirate","Brute","Desert Bandit","Desert Officer","Snow Bandit","Snowman","Chief Petty Officer","Sky Bandit","Dark CaiCC","Prisoner", "Dangerous Prisoner","Toga Warrior","Gladiator","Military Soldier","Military Spy","Fishman Warrior","Fishman Commando","God's Guard","Shanda","Royal Squad","Royal Soldier","Galley Pirate","Galley Captain"
 } elseif World2 then
 tableMon = {
  "Raider","Mercenary","Swan Pirate","Factory Staff","Marine Lieutenant","Marine Captain","Zombie","Vampire","Snow Trooper","Winter Warrior","Lab Subordinate","Horned Warrior","Magma Ninja","Lava Pirate","Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer","Arctic Warrior","Snow Lurker","Sea Soldier","Water Fighter"
@@ -6128,7 +6113,7 @@ end)
    game:GetService("RunService").RenderStepped:Connect(function()
     if UseSkill then
     local args = {
-     [1] = PosMonMasteryFruit.Position
+     [1] = PosMonCaiCCyFruit.Position
     }
     game:GetService("Players").LocalPlayer.Character[game:GetService("Players").LocalPlayer.Data.DevilFruit.Value].RemoteEvent:FireServer(unpack(args))
     end
@@ -6136,22 +6121,22 @@ end)
    end)
   end)
  
--- Main:Toggle("Auto Farm ThĂ´ng Thà£o Sùng",_G.AutoFarmGunMastery,function(value)
---  _G.AutoFarmGunMastery = value
- -- StopTween(_G.AutoFarmGunMastery)
+-- Main:Toggle("Auto Farm ThĂ´ng Thà£o Sùng",_G.AutoFarmGunCaiCCy,function(value)
+--  _G.AutoFarmGunCaiCCy = value
+ -- StopTween(_G.AutoFarmGunCaiCCy)
  -- end)
  
  spawn(function()
   pcall(function()
    while wait() do
-   if _G.AutoFarmGunMastery then
+   if _G.AutoFarmGunCaiCCy then
    local QuestTitle = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text
    if not string.find(QuestTitle, NameMon) then
    StartMagnet = false
    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
    end
    if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
-   StartMasteryGunStartMagnet = false
+   StartCaiCCyGunStartMagnet = false
    CheckQuest()
    topos(CFrameQuest)
    if (CFrameQuest.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10 then
@@ -6190,19 +6175,19 @@ end)
     game:GetService'VirtualUser':CaptureController()
     game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
     end
-    StartMasteryGunStartMagnet = true
-    PosMonMasteryGun = v.HumanoidRootPart.CFrame
+    StartCaiCCyGunStartMagnet = true
+    PosMonCaiCCyGun = v.HumanoidRootPart.CFrame
     else
-     StartMasteryGunStartMagnet = false
+     StartCaiCCyGunStartMagnet = false
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
     end
-    until v.Humanoid.Health <= 0 or _G.AutoFarmGunMastery == false or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false
-    StartMasteryGunStartMagnet = false
+    until v.Humanoid.Health <= 0 or _G.AutoFarmGunCaiCCy == false or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false
+    StartCaiCCyGunStartMagnet = false
     end
     end
     end)
    else
-    StartMasteryGunStartMagnet = false
+    StartCaiCCyGunStartMagnet = false
    local Mob = game:GetService("ReplicatedStorage"):FindFirstChild(Ms)
    if Mob then
    topos(Mob.HumanoidRootPart.CFrame * MethodFarm)
@@ -6228,7 +6213,7 @@ end)
 --end)
 --else
 --_G.Kill_At = 25
---Main:Slider1("Kill Health [For Mastery]",1,100,25,function(value)
+--Main:Slider1("Kill Health [For CaiCCy]",1,100,25,function(value)
 -- _G.Kill_At = value
 --end)
 --end
@@ -12776,7 +12761,7 @@ local x2Code = {
  "Sub2Daigrock",
  "Sky Island 3",
  "Sub2OfficialNoobie",
- "SUB2NOOBMASTER123",
+ "SUB2NOOBCaiCC123",
  "THEGREATACE",
  "Fountain City",
  "BIGNEWS",
@@ -13333,7 +13318,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.787, 0,-0.03, 0)
 TextLabel.Size = UDim2.new(0.258796811, 0, 0.0200803205, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Master Hub"
+TextLabel.Text = "CaiCC Hub | Beta"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 29.000
 TextLabel.TextTransparency = 0.030
@@ -13454,7 +13439,7 @@ for k,v in pairs(allitem) do
     local ccc = tvk:Clone()
     ccc.Parent = cac2
     for k,v in pairs(v) do 
-        if Items[v.ItemName.Text] and Items[v.ItemName.Text].Mastery then 
+        if Items[v.ItemName.Text] and Items[v.ItemName.Text].CaiCCy then 
             if v.ItemLine2.Text~="Accessory" then 
                 bucac = v.ItemName:Clone()
                 bucac.BackgroundTransparency = 1
@@ -13462,7 +13447,7 @@ for k,v in pairs(allitem) do
                 bucac.TextXAlignment  = 2
                 bucac.TextYAlignment  = 2
                 bucac.ZIndex  = 5
-                bucac.Text = Items[v.ItemName.Text].Mastery
+                bucac.Text = Items[v.ItemName.Text].CaiCCy
                 bucac.Size = UDim2.new(.35,0,.35,0)
                 bucac.Position = UDim2.new(.5,0,.5,0)
                 bucac.Parent = v
@@ -13506,7 +13491,7 @@ for k,v in pairs(ListHuhu) do
         if type(v)=="string" then 
             huhu.Image = v
         else
-            huhu.Image = "rbxassetid://9945562382"
+            huhu.Image = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimz5uKrOa_93tiX2tryyns-RVL9gM1qwa6il-lx5vepV745G8IFeEL75NiSa7onlYuh1cgU6RJeRX7V-VLEa7B-vR4yWUSeK8ywbMgMG6sUBlm4JBGf8-FrJPtsgkJAoOlbWflCLfnNST8u_QywbBmLhdtHid4Twt_DL1buXRR00ALu79GyJFa7ffDyyY/s320/new_logo.png"
             huhu.ImageRectSize = Vector2.new(100,100)
             huhu.ImageRectOffset = v*100
         end 
@@ -13787,7 +13772,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.787, 0,-0.03, 0)
 TextLabel.Size = UDim2.new(0.258796811, 0, 0.0200803205, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Master Hub"
+TextLabel.Text = "CaiCC Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 29.000
 TextLabel.TextTransparency = 0.030
@@ -13907,7 +13892,7 @@ for k,v in pairs(allitem) do
     local ccc = tvk:Clone()
     ccc.Parent = cac2
     for k,v in pairs(v) do 
-        if Items[v.ItemName.Text] and Items[v.ItemName.Text].Mastery then 
+        if Items[v.ItemName.Text] and Items[v.ItemName.Text].CaiCCy then 
             if v.ItemLine2.Text~="Accessory" then 
                 bucac = v.ItemName:Clone()
                 bucac.BackgroundTransparency = 1
@@ -13915,7 +13900,7 @@ for k,v in pairs(allitem) do
                 bucac.TextXAlignment  = 1
                 bucac.TextYAlignment  = 1
                 bucac.ZIndex  = 5
-                bucac.Text = Items[v.ItemName.Text].Mastery
+                bucac.Text = Items[v.ItemName.Text].CaiCCy
                 bucac.Size = UDim2.new(.30,0,.30,0)
                 bucac.Position = UDim2.new(.5,0,.5,0)
                 bucac.Parent = v
